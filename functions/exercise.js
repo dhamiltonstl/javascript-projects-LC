@@ -66,7 +66,7 @@ function makeUpsidedownIsosceles(height, char = "#") {
     let triangle = ""
     for (let i = height - 1; i >= 0; i--) {
         triangle += makeSpaceLine(height - i - 1, 2 * i + 1, char)
-        if (i >= 0) triangle += "\n"
+        if (i > 0) triangle += "\n"
     }
     return triangle
 }
@@ -77,4 +77,4 @@ function makeDiamond(height, char = "#") {
     return makeIsoscelesTriangle(height, char) + "\n" + makeUpsidedownIsosceles(height, char)
 }
 
-console.log(makeDiamond(5, "O"))
+console.log(makeDiamond(5, "#"))
