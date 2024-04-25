@@ -1,7 +1,7 @@
 #shuttleBackground {
     background-color: green;
     display: inline-block;
-    height: 80%;
+    height: 100%;
     width: 40%;
     position: relative;
 }
@@ -11,8 +11,11 @@
 }
 
 #flightDisplay {
-    text-align: center; 
-    height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 350px; 
     width: 100%;
 }
 
@@ -23,8 +26,10 @@
 .center-block {
     text-align: center; 
     display: inline-block;
+    padding: 15px;
 }
 
 .centered {
     text-align: center;
+    padding: 15px;
 }

@@ -4,9 +4,18 @@ let pets = "parrots,cats,moose,alien eggs";
 let sleepAids = "blankets,pillows,eyepatches,alarm clocks";
 
 //1) Use split to convert the strings into four cabinet arrays. Alphabetize the contents of each cabinet.
+let foodArr = food.split(",").sort()
+let equipmentArr = equipment.split(",").sort()
+let petsArr = pets.split(",").sort()
+let sleepAidsArr = sleepAids.split(",").sort()
 
 //2) Initialize a cargoHold array and add the cabinet arrays to it. Print cargoHold to verify its structure.
-
+let cargoHold = [
+    foodArr,
+    equipmentArr,
+    petsArr,
+    sleepAidsArr
+]
 //3) Query the user to select a cabinet (0 - 3) in the cargoHold.
 
 //4) Use bracket notation and a template literal to display the contents of the selected cabinet. If the user entered an invalid number, print an error message.
